@@ -1,10 +1,13 @@
 <?php
 
 use App\Http\Controllers\CurtainController;
+use App\Models\Curtain;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('welcome');
+    $curtains = Curtain::all();
+
+    return view('welcome', compact('curtains'));
 });
 
 

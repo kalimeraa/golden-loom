@@ -4,50 +4,62 @@
 
 @section('head-style')
     <link rel="stylesheet" href="{{ asset('css/postcard.css') }}">
+
+    <style>
+            
+      .explain {
+          width: 100%;
+      }
+
+      .explain-content {
+          max-width: 800px;
+          margin: 20px auto;
+          font-family: 'Ubuntu', Arial, sans-serif;
+          font-weight: 300;
+          font-size: 20px;
+          color: #000000;
+      }
+    </style>
 @endsection
 
 @section('content')
 
 @include('layout.partials.carousel')
 
+<div class="container explain" style="margin-top:20px !important; border-radius: 100px;">
+        <div class="row">
+            <div class="col-md-12 explain-content">
+                <h3 class="text-center">
+                  Wich Curtain Fabric to Choose ?  
+                </h3>
+                <h5 class="text-center">
+                  Choosing the perfect curtain fabric for your home 
+                </h5>
+                <p>
+                Curtains are more important than just window covering ; they add character , warmth and style to any room. Selecting the right fabric is crucal to acheving the desired look and funcionality. Here are some tips to help you choose the perfect curtain fabric for your home.
+                </p>
+            </div>
+         
+        </div>
+</div>
+
 <section class="light mt-5">
 	<div class="container py-2">
-		<article class="postcard light blue">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://optim.tildacdn.com/tild3833-3935-4038-b736-343066356336/-/cover/432x228/center/center/-/format/webp/_2024-02-07_14104005.png" alt="Image Title" />
-			</a>
-			<div class="postcard__text t-dark">
-				<h1 class="postcard__title blue"><a href="/curtains/sheer-only">Sheer only</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">
-                    Sheer fabric curtains gently filter sunlight into your room, soft and inviting ambiance
-                </div>
-                <a href="#" class="postcard__cta">Read More</a>
-			</div>
-		</article>
-		<article class="postcard light red">
-			<a class="postcard__img_link" href="#">
-				<img class="postcard__img" src="https://optim.tildacdn.com/tild3634-6137-4539-b537-353937323264/-/cover/432x228/center/center/-/format/webp/_2024-02-07_14115207.png" alt="Image Title" />	
-			</a>
-			<div class="postcard__text t-dark">
-				<h1 class="postcard__title red"><a href="#">Blackout only</a></h1>
-				<div class="postcard__subtitle small">
-					<time datetime="2020-05-25 12:00:00">
-						<i class="fas fa-calendar-alt mr-2"></i>Mon, May 25th 2020
-					</time>
-				</div>
-				<div class="postcard__bar"></div>
-				<div class="postcard__preview-txt">
-                    Blackout curtains provide the ultimate light control, effectively blocking out sunlight
-                </div>
-                <a href="#" class="postcard__cta">Read More</a>
-			</div>
-		</article>
+		@foreach($curtains as $curtain)
+      <article class="postcard light red">
+        <a class="postcard__img_link" href="/curtains/{{ $curtain->slug}}">
+          <img class="postcard__img" src="{{ asset($curtain->image) }}" alt="Image Title" />	
+        </a>
+        <div class="postcard__text t-dark">
+          <h1 class="postcard__title red"><a href="/curtains/{{ $curtain->slug}}">{{ $curtain->title }}</a></h1>
+          <div class="postcard__bar"></div>
+          <div class="postcard__preview-txt" style="color: #000 !important;">
+                {{ $curtain->short_description }}
+          </div>
+          <a href="/curtains/{{ $curtain->slug}}" class="postcard__cta" style="color: #000 !important;">Read More</a>
+        </div>
+      </article>
+    @endforeach
 	</div>
 </section>
 
@@ -200,9 +212,112 @@
   </div>
 </section>
 
+<!---FAQs
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <h2 class="mb-4 text-center">FAQs about blackout curtains</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                        How are your blackout curtains the best in Dubai?
+                            </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        Our blackout curtains are crafted by professionals to provide maximum light blocking, using high-quality materials for a perfect fit and long-lasting durability.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                        Do you offer a free consultation about blackout curtains?
+                            </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        Yes, we do. Just fill out the form, and we’ll arrange a visit at your convenience.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                        What goes into the final price of blackout curtains?
+                            </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        The price includes fabric selection, tailoring, delivery, installation, and necessary hardware for a hassle-free experience.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        What types of stains can you remove?
+                            </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        We generally can remove a wide range of stains including wine, dirt, dust, cat and dog urine stains. The material and condition of the carpet can be a limiting factor, determining what kind of chemicals are safe to use in each case.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        Where can I find blackout curtains in Dubai?
+                            </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        We provide a one-stop solution for finding premium blackout curtains across Dubai.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                            Can blackout curtains really help with noise reduction?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        Yes, our blackout curtains not only block light but also reduce noise, creating a quieter indoor environment.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                        Are you selling blackout curtains with any promo?
+                        </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                        We regularly run special promotions on blackout curtains. For the latest deals, contact us or visit our website.
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+-->
+
 @include('layout.partials.booking')
 
 @endsection
 
 @section('footer-js')
+       
 @endsection

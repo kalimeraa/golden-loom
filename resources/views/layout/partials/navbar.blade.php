@@ -14,12 +14,9 @@
 				Models
 				</a>
               <div class="dropdown-menu" aria-labelledby="dropdown04">
-              	<a class="dropdown-item" href="/curtains/sheer-only#">Sheer Only</a>
-                <a class="dropdown-item" href="#">Blackout Only</a>
-                <a class="dropdown-item" href="#">Motorized Curtains</a>
-                <a class="dropdown-item" href="#">Blinds</a>
-                <a class="dropdown-item" href="#">Sheer & Blackout</a>
-                <a class="dropdown-item" href="#">BIG Window</a>
+				@foreach(\App\Models\Curtain::all() as $curtain)
+					<a class="dropdown-item" href="/curtains/{{ $curtain->slug }}">{{ $curtain->title}}</a>
+				@endforeach
               </div>
             </li>
 	        </ul>
