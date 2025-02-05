@@ -56,7 +56,7 @@
                                 <b>Diora Berkinova</b>
                             </h6>
                             <small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> info@goldenloom.store</small>
-                            <small> <span><i class="fa fa-phone" aria-hidden="true"></i></span> +905320506488 </small>
+                            <small> <span><i class="fa fa-phone" aria-hidden="true"></i></span>+905320506488 </small>
                         </div>
                     </div>
                     <div class="row ">

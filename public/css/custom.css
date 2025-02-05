@@ -1,6 +1,68 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
+body {
+  font-family: 'Ubuntu', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.8;
+  font-weight: normal;
+  color: #808080;
+}
+
+/* Ana container */
+.custom-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: stretch;
+  background-color: #e8e0d5; /* Sol taraf için arka plan rengi */
+  border-radius: 100px;
+  overflow: hidden;
+  height: 450px; /* İstediğin yüksekliğe göre ayarla */
+}
+
+/* Sol taraftaki metin içeriği */
+.text-content {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+}
+
+/* Başlık ve alt başlık */
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+/* Liste elemanları */
+.features {
+  list-style: none;
+  padding: 0;
+}
+
+.features li {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+/* Sağ taraftaki resim */
+.image-container {
+  flex: 1.2;
+  background-image: url("/images/carousel1.jpg");
+  background-size: cover;
+  background-position: center;
+  border-top-right-radius: 100px; /* Sağ üst radius */
+  border-bottom-right-radius: 100px; /* Sağ alt radius */
+}
+
 .ftco-navbar-light {
     background: #e8e0d5 !important;
     z-index: 3;
@@ -183,13 +245,7 @@
     color: #000;
 }
 
-body {
-  font-family: 'Poppins', Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.8;
-  font-weight: normal;
-  color: #808080;
-}
+
 
 a {
   transition: 0.3s all ease;
@@ -215,7 +271,7 @@ button:hover, button:focus {
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.2;
   font-weight: 400;
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: 'Ubuntu', Arial, sans-serif;
   color: #000;
 }
 
@@ -252,7 +308,8 @@ h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
 .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: 'Poppins', Arial, sans-serif;
+  
+
   color: #000;
 }
 
