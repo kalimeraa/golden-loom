@@ -55,11 +55,11 @@
                             <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5">
                                 <b>Diora Berkinova</b>
                             </h6>
-                            <small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> info@goldenloom.store</small>
-                            <small> <span><i class="fa fa-phone" aria-hidden="true"></i></span>+905320506488 </small>
+                            <small> <span><i class="fa fa-envelope" aria-hidden="true"></i></span> info@goldenloom.store </small><br>
+                            <small> <span><i class="fa fa-phone" aria-hidden="true"></i></span> +905320506488 </small>
                         </div>
                     </div>
-                    <div class="row ">
+                    <div class="row">
                         <div class="col-xl-8 col-md-4 col-sm-4 col-auto  my-md-0 mt-5 order-sm-1 order-3 align-self-end">
                             <p class="social text-muted mb-0 pb-0 bold-text">
                                 <!--
