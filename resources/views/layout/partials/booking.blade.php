@@ -16,21 +16,21 @@
 										<div class="col-md-4">
 											<div class="dbox w-100 d-flex align-items-start">
 						        		<div class="text">
-							            <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+							            <p><span>Address:</span> Istanbul/Turkey</p>
 							          </div>
 						          </div>
 										</div>
 										<div class="col-md-4">
 											<div class="dbox w-100 d-flex align-items-start">
 						        		<div class="text">
-							            <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
+							            <p><span>Email:</span> <a href="mailto:info@goldenloom.store">info@goldenloom.store</a></p>
 							          </div>
 						          </div>
 										</div>
 										<div class="col-md-4">
 											<div class="dbox w-100 d-flex align-items-start">
 						        		<div class="text">
-							            <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
+							            <p><span>Phone:</span> <a href="tel://+905320506488">+905320506488</a></p>
 							          </div>
 						          </div>
 										</div>
