@@ -104,7 +104,7 @@
 <section>
 <div class="container mt-5">
     <h2 class="pb-3 pt-2 border-bottom mb-5 text-center">
-        A Comprehensive Step-by-Step Guide
+      {{ __('general.a_comprehensive_step_by_step')}}
     </h2>
     <!--first section-->
     <div class="row align-items-center how-it-works d-flex">
@@ -112,10 +112,11 @@
         <div class="circle font-weight-bold">1</div>
       </div>
       <div class="col-6">
-        <h5>Free Consultation
+        <h5>
+          {{ __('general.free_consultation')}}
         </h5>
         <p>
-            Contact us for a free visit from our designer consultant. We visit your location to understand your requirements & suggest the best options.
+          {{ __('general.free_consultation_text')}}
         </p>
       </div>
     </div>
@@ -134,9 +135,11 @@
     <!--second section-->
     <div class="row align-items-center justify-content-end how-it-works d-flex">
       <div class="col-6 text-right">
-        <h5>Customized Design
+        <h5>
+          {{ __('general.customized_design') }}
         </h5>
-        <p>Our experts will make recommendations based on your inputs regarding curtain types, styles, materials, and colors to fit your space and budget.
+        <p>
+          {{ __('general.customized_design_text') }}  
         </p>
       </div>
       <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
@@ -162,10 +165,10 @@
       </div>
       <div class="col-6">
         <h5>
-            Final Selection
+            {{ __('general.final_selection') }}
         </h5>
         <p>
-        Once you’ve committed to the curtains, we’ll confirm the overall price, including everything from fabric selection to installation.
+            {{ __('general.final_selection_text') }}
         </p>
       </div>
     </div>
@@ -185,10 +188,10 @@
     <div class="row align-items-center justify-content-end how-it-works d-flex">
       <div class="col-6 text-right">
         <h5>
-            Precise Measurements
+          {{ __('general.precise_measurement') }}
         </h5>
         <p>
-        We will have our team take proper measurements to make sure they are a perfect fit.
+        {{ __('general.precise_measurement_text') }}
         </p>
       </div>
       <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
@@ -215,10 +218,10 @@
       </div>
       <div class="col-6">
         <h5>
-        Production & Quality Check
+            {{ __('general.production_quality_check') }}
         </h5>
         <p>
-        Now you can have your curtains tailored to the highest standards, with a group quality check ensuring excellence.
+          {{ __('general.production_quality_check_text') }}
         </p>
       </div>
     </div>
@@ -239,10 +242,10 @@
     <div class="row align-items-center justify-content-end how-it-works d-flex">
       <div class="col-6 text-right">
         <h5>
-            Delivery & Installation
+            {{ __('general.delivery_installation') }}
         </h5>
         <p>
-            The curtains are then delivered to you and installed at your convenience, and everything is done to full professional standards.
+          {{ __('general.delivery_installation_text') }}
         </p>
       </div>
       <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">

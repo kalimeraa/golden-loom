@@ -47,7 +47,7 @@
                         </div>
                         <div class="col-xl-2 col-md-3 col-sm-3 col-12">
                             <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5">
-                                <b>ADDRESS</b>
+                                <b>{{ __('general.address') }}</b>
                             </h6>
                             <p class="mb-1">Istanbul/Turkey</p> 
                         </div>

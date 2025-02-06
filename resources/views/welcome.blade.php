@@ -1,6 +1,6 @@
 @extends('layout.main')
 
-@section('title', 'Ana Sayfa')
+@section('title', __('general.home'))
 
 @section('head-style')
     <link rel="stylesheet" href="{{ asset('css/postcard.css') }}">
@@ -30,13 +30,13 @@
         <div class="row">
             <div class="col-md-12 explain-content">
                 <h3 class="text-center">
-                  Wich Curtain Fabric to Choose ?  
+                  {{ __('general.which_curtains_fabric_to_choose') }}
                 </h3>
                 <h5 class="text-center">
-                  Choosing the perfect curtain fabric for your home 
+                  {{ __('general.choosing_perfect_curtains') }}
                 </h5>
                 <p>
-                Curtains are more important than just window covering ; they add character , warmth and style to any room. Selecting the right fabric is crucal to acheving the desired look and funcionality. Here are some tips to help you choose the perfect curtain fabric for your home.
+                  {{ __('general.choosing_perfect_curtains_text') }}
                 </p>
             </div>
          
@@ -68,8 +68,8 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-md-8 text-center">
-        <h3 class="mb-3">How it works</h3>
-        <h6 class="subtitle font-weight-normal">We offer 100% satisafaction and Money back Guarantee</h6>
+        <h3 class="mb-3">{{ __('general.how_it_works') }}</h3>
+        <h6 class="subtitle font-weight-normal">{{ __('general.how_it_works_text') }}</h6>
       </div>
     </div>
     <!-- row  -->
@@ -78,18 +78,18 @@
           <div class="col-lg-6">
             <div class="card border-0 mb-4">
               <i class="icon-emotsmile display-6 text-info"></i>
-              <h5 class="font-weight-medium mt-3">Book a free visit with us</h5>
+              <h5 class="font-weight-medium mt-3">{{ __('general.book_a_free_visit_us') }}</h5>
               <p class="mt-3">
-                Our managers will set a convenient day and time for a FREE consultation with our curtain expert and provide the exact estimate for the curtain tailoring service
+              {{ __('general.book_a_free_visit_us_text') }}
               </p>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="card border-0 mb-4">
               <i class="icon-mouse display-6 text-info"></i>
-              <h5 class="font-weight-medium mt-3">Cunsultation and mesurement</h5>
+              <h5 class="font-weight-medium mt-3">{{ __('general.consulting_and_measurement') }}</h5>
               <p class="mt-3">
-                Our expert will come to your place at an estimated time to make measurements, provide fabric samples to choose from
+                {{ __('general.consulting_and_measurement_text') }}
               </p>
             </div>
           </div>
@@ -99,15 +99,16 @@
           <div class="col-lg-6">
             <div class="card border-0 mb-4">
               <i class="icon-support display-6 text-info"></i>
-              <h5 class="font-weight-medium mt-3">The best solution to match your interior</h5>
-              <p class="mt-3">With premium-quality cotton and linen options and a soothing color palette, we'll guide you in selecting the ideal fabric, color, and pleat style to elevate your living space.</p>
+              <h5 class="font-weight-medium mt-3">{{ __('general.best_solution_to_match_your_interior') }}</h5>
+              <p class="mt-3">{{ __('general.best_solution_to_match_your_interior_text') }}</p>
             </div>
           </div>
           <div class="col-lg-6">
             <div class="card border-0 mb-4">
               <i class="icon-hourglass display-6 text-info"></i>
-              <h5 class="font-weight-medium mt-3">Delivery and Installation</h5>
-              <p class="mt-3">Receive perfectly tailored curtains in just 4-5 days. Our team will install it. Curtain rod and installation are FREE.
+              <h5 class="font-weight-medium mt-3">{{ __('general.delivery_and_installation') }}</h5>
+              <p class="mt-3">
+              {{ __('general.delivery_and_installation_text') }}
               </p>
             </div>
           </div>
@@ -121,7 +122,7 @@
 <section>
   <div class="row d-flex justify-content-center mb-5">
     <div class="col-md-10 col-xl-8 text-center">
-      <h3 class="mb-4">What Our Customers Say About Us</h3>
+      <h3 class="mb-4">{{ __('general.what_our_customers_say') }}</h3>
     </div>
   </div>
   <div class="row text-center">
@@ -131,27 +132,10 @@
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">Linda Refai</h5>
-      <h6 class="text-primary mb-3">Customer</h6>
+      <h6 class="text-primary mb-3">{{ __('general.customer') }}</h6>
       <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>Great experience, perfectly priced, and amazing value for money. This is our second time to use them and I will use them again for my future curtain requirements.
+        {{ __('general.customer_1_comment') }}
       </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star-half-alt fa-sm text-warning"></i>
-        </li>
-      </ul>
     </div>
     <div class="col-md-4 mb-5 mb-md-0">
       <div class="d-flex justify-content-center mb-4">
@@ -161,25 +145,9 @@
       <h5 class="mb-3">Lisa Cudrow</h5>
       <h6 class="text-primary mb-3">Customer</h6>
       <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>The team provided such personalized service, making them easily accessible for any inquiries and always punctual. Highly recommended
+      {{ __('general.customer_2_comment') }}
       </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
+     
     </div>
     <div class="col-md-4 mb-0">
       <div class="d-flex justify-content-center mb-4">
@@ -187,27 +155,10 @@
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">John Smith</h5>
-      <h6 class="text-primary mb-3">Customer</h6>
+      <h6 class="text-primary mb-3">{{ __('general.customer') }}</h6>
       <p class="px-xl-3">
-        <i class="fas fa-quote-left pe-2"></i>The professionalism of the staff at the curtains factory truly impressed me. Their guidance in selecting the perfect sheers curtains Dubai for my home was exceptional. I couldn't be more delighted with the outcome!
+        {{ __('general.customer_2_comment') }}
       </p>
-      <ul class="list-unstyled d-flex justify-content-center mb-0">
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="fas fa-star fa-sm text-warning"></i>
-        </li>
-        <li>
-          <i class="far fa-star fa-sm text-warning"></i>
-        </li>
-      </ul>
     </div>
   </div>
 </section>
