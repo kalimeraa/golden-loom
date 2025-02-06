@@ -143,7 +143,7 @@
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">Lisa Cudrow</h5>
-      <h6 class="text-primary mb-3">Customer</h6>
+      <h6 class="text-primary mb-3">{{ __('general.customer') }}</h6>
       <p class="px-xl-3">
       {{ __('general.customer_2_comment') }}
       </p>
