@@ -38,10 +38,10 @@
                         <div class="col-xl-6 col-md-3 col-sm-3 col-12  my-auto mx-auto a">
                             <h3 class="text-muted mb-md-0 mb-5 bold-text">Golden Loom</h3>
                         </div>
-                        <div class="col-xl-2 col-md-3 col-sm-4 col-12"><h6 class="mb-3 mb-lg-4 bold-text "><b>{{ __('general.menu') }}</b></h6>
+                        <div class="col-xl-2 col-md-3 col-sm-3 col-12"><h6 class="mb-3 mb-lg-4 bold-text "><b>{{ __('general.menu') }}</b></h6>
                             <ul class="list-unstyled">
                                 @foreach(\App\Models\Curtain::all() as $curtain)
-                                    <li>{{ $curtain->title }}</li>
+                                    <li><a href="/curtains/{{ $curtain->slug }}" style="color:#000 !important;text-decoration:none !important">{{ $curtain->title }}</a></li>
                                 @endforeach
                             </ul>
                         </div>
@@ -87,6 +87,10 @@
         </footer>
     </div>
 
+    <a href="https://wa.me/905320506488" target="_blank" class="whatsapp-icon">
+        <i class="fa fa-whatsapp" aria-hidden="true" style="margin:0px !important; padding:0px !important"></i>
+    </a>
+
     <!-- jQuery (Bootstrap için gerekiyor) -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- Bootstrap JS -->
@@ -116,5 +120,7 @@
     </script>
 
     @yield('footer-js')
+
+   
 </body>
 </html>

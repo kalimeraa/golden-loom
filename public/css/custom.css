@@ -1,6 +1,30 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
+
+.whatsapp-text {
+  font-size: 18px; /* Yazı boyutu */
+}
+
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff; /* Beyaz simge rengi */
+  background-color: #25d366; /* WhatsApp yeşili */
+  font-size: 30px;
+  padding: 15px; /* Simgeye yeterince boşluk ekleyin */
+  border-radius: 50%; /* Tam yuvarlak yapmak için %50 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none; 
+}
+
+.whatsapp-icon :hover {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Ubuntu', Arial, sans-serif;
   font-size: 14px;
