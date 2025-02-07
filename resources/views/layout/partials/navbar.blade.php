@@ -2,14 +2,14 @@
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="fa fa-bars"></span> Menu
+                <span class="fa fa-bars"></span> {{ __('general.menu') }}
             </button>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav m-auto">
-                    <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item active"><a href="/" class="nav-link">{{ __('general.home') }}</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Models
+                            {{ __('general.models') }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             @foreach(\App\Models\Curtain::all() as $curtain)
@@ -20,7 +20,7 @@
                     <!-- Dil Seçimi -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdownLanguage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Language
+                            {{ __('general.language') }}
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdownLanguage">
                             <a class="dropdown-item" href="{{ route('locale', ['lang' => 'tr']) }}">Türkçe</a>

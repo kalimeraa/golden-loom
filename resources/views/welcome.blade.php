@@ -51,12 +51,14 @@
           <img class="postcard__img" src="{{ asset($curtain->image) }}" alt="Image Title" />	
         </a>
         <div class="postcard__text t-dark">
-          <h1 class="postcard__title red"><a href="/curtains/{{ $curtain->slug}}">{{ $curtain->title }}</a></h1>
-          <div class="postcard__bar"></div>
+          <h1 class="postcard__title red">
+          <a href="/curtains/{{ $curtain->slug }}">{{ $curtain->getTranslation('title', app()->getLocale()) }}</a>
+          </h1>
+        <div class="postcard__bar"></div>
           <div class="postcard__preview-txt" style="color: #000 !important;">
-                {{ $curtain->short_description }}
+                {{ $curtain->getTranslation('short_description',app()->getLocale()) }}
           </div>
-          <a href="/curtains/{{ $curtain->slug}}" class="postcard__cta" style="color: #000 !important;">Read More</a>
+          <a href="/curtains/{{ $curtain->slug}}" class="postcard__cta" style="color: #000 !important;">{{ __('general.read_more') }}</a>
         </div>
       </article>
     @endforeach

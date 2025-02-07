@@ -18,9 +18,9 @@ Route::group(['middleware' => 'web'], function () {
         }
 
         app()->setLocale($lang);
-        
+
         return redirect()->back();
     })->name('locale');
-    
+
     Route::get('curtains/{slug}', [CurtainController::class, 'edit']);
 });

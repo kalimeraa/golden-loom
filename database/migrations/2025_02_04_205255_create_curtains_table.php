@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::create('curtains', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->json('title');
             $table->string('slug')->unique();
-            $table->text('short_description')->nullable();
-            $table->text('description')->nullable();
+            $table->json('short_description')->nullable();
+            $table->json('description')->nullable();
             $table->text('image')->nullable();
             $table->timestamps();
         });

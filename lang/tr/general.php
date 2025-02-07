@@ -48,4 +48,8 @@ return [
     'production_quality_check_text' => 'Artık perdeleriniz en yüksek standartlara göre dikilebilir ve grup kalite kontrolü mükemmeliyeti garanti eder.',
     'delivery_installation' => 'Teslimat ve Montaj',
     'delivery_installation_text' => 'Perdeleriniz size teslim edilir ve uygun olduğunuz zaman montajı yapılır, her şey tamamen profesyonel standartlarda gerçekleştirilir.',
+    'language' => 'Dil',
+    'models' => 'Modeller',
+    'menu' => 'Menü',
+    'read_more' => 'Daha fazla oku',
 ];

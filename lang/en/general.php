@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 return [
     'motto_of_golden_loom' => 'Made simple with excellence',
@@ -47,5 +47,8 @@ return [
     'production_quality_check_text' => 'Now you can have your curtains tailored to the highest standards, with a group quality check ensuring excellence.',
     'delivery_installation' => 'Delivery & Installation',
     'delivery_installation_text' => 'The curtains are then delivered to you and installed at your convenience, and everything is done to full professional standards.',
-];  
-
+    'language' => 'Language',
+    'models' => 'Models',
+    'menu' => 'Menu',
+    'read_more' => 'Read More',
+];
