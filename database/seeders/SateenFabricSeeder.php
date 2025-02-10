@@ -16,7 +16,7 @@ class SateenFabricSeeder extends Seeder
             'title' => [
                 'en' => 'Sateen Fabric Curtains',
                 'tr' => 'Saten Kumaş Perdeler',
-                'ru' => 'Шторы из атласной ткани',
+                'ru' => 'Шторы из сатиновой ткани',
             ],
             'slug' => 'sateen-fabrics',
             'short_description' => [

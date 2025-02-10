@@ -79,12 +79,49 @@ body {
 
 /* Sağ taraftaki resim */
 .image-container {
-  flex: 1.2;
+  flex: 1; /* Esneklik değerini 1 yaparak metin alanıyla uyumlu hale getiriyoruz */
   background-image: url("/images/carousel1.jpg");
-  background-size: cover;
-  background-position: center;
+  background-size: cover; /* Resmi sığdır */
+  background-position: center; /* Resmin merkezde görünmesini sağla */
   border-top-right-radius: 100px; /* Sağ üst radius */
   border-bottom-right-radius: 100px; /* Sağ alt radius */
+  height: 100%; /* Yüksekliği tam olarak kapsar */
+}
+
+
+/* Mobil uyumlu tasarım için medya sorgusu */
+@media (max-width: 768px) {
+  /* Metin içerikleri biraz daha küçük olabilir */
+  .title {
+    font-size: 1.5rem;
+    padding-left: 20px;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+    padding-left: 20px;
+  }
+
+  .features li {
+    font-size: 0.9rem;
+    padding-left: 20px;
+  }
+
+  /* Text content alanına daha az padding verilmesi */
+  .text-content {
+    padding: 20px;
+  }
+
+  /* Mobilde container'ın yüksekliğini daha uygun hale getir */
+  .custom-container {
+    border-radius: 0; /* Mobilde yuvarlak kenarları kaldır */
+    overflow: hidden; /* İçeriğin taşmasını engelle */
+  }
+
+  .image-container {
+    border-radius: 0; /* Mobilde köşe yuvarlaklığını kaldır */
+  }
+ 
 }
 
 .ftco-navbar-light {

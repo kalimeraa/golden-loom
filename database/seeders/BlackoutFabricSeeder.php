@@ -63,13 +63,13 @@ Farklı renk, doku ve stillerde mevcuttur
 </p>
 <ul>
   <li style="color:#000">
-    Köpük Kaplamalı Karartma Kumaşı – Işığı engelleyen akrilik köpük kaplamalı polyester veya pamuklu kumaş
+    Karartma Kumaşı – Işığı engelleyen akrilik köpük kaplamalı polyester veya pamuklu kumaş
   </li>
   <li style="color:#000">
     Üç Katmanlı Karartma Kumaşı – Genellikle polyesterden oluşan üç katmanlı yoğun bir dokuma, ışığın %85–99’unu engeller.
   </li>
   <li style="color:#000">
-    Lamineli Karartma Kumaşı – Genellikle otellerde kullanılan, ekstra karartma astarı bulunan kumaş.
+    Karartma Kumaşı – Genellikle otellerde kullanılan, ekstra karartma astarı bulunan kumaş.
   </li>
   <li style="color:#000">
     Vinil Karartma Kumaşı – Ticari alanlarda yaygın olarak kullanılan dayanıklı, su geçirmez bir seçenek.
