@@ -114,7 +114,7 @@ body {
 
   /* Mobilde container'ın yüksekliğini daha uygun hale getir */
   .custom-container {
-    border-radius: 0; /* Mobilde yuvarlak kenarları kaldır */
+    border-radius: 50; /* Mobilde yuvarlak kenarları kaldır */
     overflow: hidden; /* İçeriğin taşmasını engelle */
   }
 
