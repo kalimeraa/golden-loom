@@ -307,10 +307,9 @@ body {
 }
 
 
-
 a {
   transition: 0.3s all ease;
-  color: #ffc6be;
+  color: #0000;
 }
 
 a:hover, a:focus {
@@ -587,8 +586,6 @@ h3{
 .rights{
   font-size: calc(10px + (12 - 10) * ((100vw - 360px) / (1600 - 360))) !important; 
 }
-
-
 
 
 .accordion-item {
