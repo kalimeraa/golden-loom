@@ -13,7 +13,9 @@
                         </a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             @foreach(\App\Models\Curtain::all() as $curtain)
-                                <a class="dropdown-item" href="/curtains/{{ $curtain->slug }}">{{ $curtain->title}}</a>
+                                <a class="dropdown-item" href="/curtains/{{ $curtain->slug }}">
+                                    {{ $curtain->title}}
+                                </a>
                             @endforeach
                         </div>
                     </li>
