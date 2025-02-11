@@ -63,7 +63,7 @@ Farklı renk, doku ve stillerde mevcuttur
 </p>
 <ul>
   <li style="color:#000">
-    Karartma Kumaşı – Işığı engelleyen akrilik köpük kaplamalı polyester veya pamuklu kumaş
+       Işığı engelleyen akrilik köpük kaplamalı polyester veya pamuklu kumaş
   </li>
   <li style="color:#000">
     Üç Katmanlı Karartma Kumaşı – Genellikle polyesterden oluşan üç katmanlı yoğun bir dokuma, ışığın %85–99’unu engeller.
