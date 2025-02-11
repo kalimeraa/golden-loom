@@ -130,7 +130,7 @@
   <div class="row text-center">
     <div class="col-md-4 mb-5 mb-md-0">
       <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+        <img src="/images/customer1.jpg"
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">Linda Refai</h5>
@@ -141,7 +141,7 @@
     </div>
     <div class="col-md-4 mb-5 mb-md-0">
       <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+        <img src="/images/customer2.jpeg"
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">Lisa Cudrow</h5>
@@ -153,7 +153,7 @@
     </div>
     <div class="col-md-4 mb-0">
       <div class="d-flex justify-content-center mb-4">
-        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+        <img src="/images/customer3.webp"
           class="rounded-circle shadow-1-strong" width="150" height="150" />
       </div>
       <h5 class="mb-3">John Smith</h5>
