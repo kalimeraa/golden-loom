@@ -16,7 +16,7 @@ class LinenFabricSeeder extends Seeder
             'title' => [
                 'en' => 'Linen Fabric Curtains',
                 'tr' => 'Keten Kumaş Perdeler',
-                'ru' => 'Льняные Шторы',
+                'ru' => 'Льняные шторы',
             ],
             'slug' => 'linen-fabrics',
             'short_description' => [
