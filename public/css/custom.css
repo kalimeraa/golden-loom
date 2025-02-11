@@ -88,6 +88,11 @@ body {
   height: 100%; /* Yüksekliği tam olarak kapsar */
 }
 
+@media (max-width: 768px) {
+  .image-container {
+      background-position: left; /* Mobilde farklı bir konum */
+  }
+}
 
 /* Mobil uyumlu tasarım için medya sorgusu */
 @media (max-width: 768px) {
