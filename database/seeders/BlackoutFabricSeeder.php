@@ -16,7 +16,7 @@ class BlackoutFabricSeeder extends Seeder
             'title' => [
                 'en' => 'Blackout Fabric Curtains',
                 'tr' => 'Karartma Kumaş Perdeler',
-                'ru' => 'Шторы из затемняющей ткани',
+                'ru' => 'Блэкаут',
             ],
             'slug' => 'blackout-fabrics',
             'short_description' => [
